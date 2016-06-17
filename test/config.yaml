@@ -9,9 +9,9 @@
 #   type: "filestore"
 nodes:
   localmongo:
-    type: mongo
-    uri: mongodb://localhost/boom
-    namespace: boom.foo
+    type: mongodb
+    uri: mongodb://127.0.0.1:27017/loopback
+    #namespace: loopback.question
     debug: true
   localmongo2:
     type: mongo
@@ -20,7 +20,8 @@ nodes:
     debug: true
   es:
     type: elasticsearch
-    uri: https://nick:darling@haproxy1.dblayer.com:10291/thisgetsignored
+    uri: http://127.0.0.1:9200/
+   # uri: https://nick:darling@haproxy1.dblayer.com:10291/thisgetsignored
   locales:
     type: elasticsearch
     uri: http://localhost:9200/thisgetsignored
